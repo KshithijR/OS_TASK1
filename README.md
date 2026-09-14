@@ -43,3 +43,31 @@ In this program:
 ```text
 Buffer Capacity = 5
 Number of Items = 10
+
+# Matrix Multiplication Using Threads
+
+
+## Problem Statement
+
+Implement matrix multiplication of two matrices using threads. The matrices should have a minimum of 100 rows and 100 columns.
+
+In this project, two **100 × 100 matrices** are multiplied using **POSIX threads (`pthread`)** in C++.
+
+A separate worker thread is created for every element of the result matrix. Therefore, since the result matrix contains 10,000 elements, the program creates **10,000 worker threads**.
+
+The program also contains a separate progress thread that displays a progress bar in the terminal while the matrix multiplication is being performed.
+
+---
+
+## Objective
+
+The main objective of this project is to demonstrate how **multithreading** can be used to perform matrix multiplication.
+
+Normally, matrix multiplication can be performed sequentially using nested loops. In this project, the calculation is divided among multiple threads.
+
+Each worker thread is responsible for calculating exactly **one element** of the result matrix.
+
+For a 100 × 100 result matrix:
+
+```text
+100 × 100 = 10,000 elements
