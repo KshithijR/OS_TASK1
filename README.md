@@ -40,7 +40,7 @@ The Producer-Consumer problem is a synchronization problem where:
 
 In this program:
 
-```text
+
 Buffer Capacity = 5
 Number of Items = 10
 
